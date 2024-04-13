@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1>FreeType Glyph Inspector</h1>
+
+  <label for="FileReader">Select ttf/otf file:</label>
+  <p><input type="file" id="FileReader" accept=".ttf, .otf" /></p>
+
+  <canvas id="viewport" width="500" height="500"></canvas>
+
+  <p>Glyph index: <span id="glyph_idx">?</span></p>
+  <p>Glyph size: <span id="glyph_sz">?</span></p>
+
+  <p>Press <kbd>&larr;</kbd> / <kbd>&rarr;</kbd> to show next glyph</p>
+  <p>Press <kbd>&uarr;</kbd> / <kbd>&darr;</kbd> to change size</p>
+
+  <script src="script.js" />
+
+</body>
+
+</html>
